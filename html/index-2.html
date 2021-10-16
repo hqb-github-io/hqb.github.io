@@ -24,6 +24,53 @@
 
   <link rel="stylesheet" href="../assets/css/mobster.css">
 </head>
+  
+
+<style>
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+#section1 {
+
+  height: 600px;
+
+}
+
+#section2 {
+
+  height: 600px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main" id="section1">
+
+  <h2>Section 1</h2>
+
+  
+
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+
+ 
+
+</div>
+
+<div class="main" id="section2">
+
+  <h2>Section 2</h2>
+
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+
+</div>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-floating">
@@ -74,7 +121,7 @@
           <p class="mb-4">Mobster has features to view and manage <br>
           our finances, such as transfer, and statistics.</p>
 
-          <a href="#" class="btn btn-dark">Get Started</a>
+          <a href="#section2" class="btn btn-dark">Xuống</a>
 
         </div>
         <div class="col-lg-6 d-none d-lg-block wow zoomIn">
@@ -99,7 +146,7 @@
               <div class="svg-icon mx-auto mb-4">
                 <img src="../assets/img/icons/payment.png" alt="">
               
-              <h5 class="fg-gray">2048 Lazy</h5>
+              <h5 class="fg-gray" id="section2">2048 Lazy</h5>
                 <a href="../2048-lazy/2048-lazy.html" class="btn btn-outline-primary rounded-pill">Chơi Ngay</a>
 
       </div>
