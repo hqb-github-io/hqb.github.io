@@ -2,15 +2,18 @@
 <html>
 <head>
 <style>
-			@import 'https://fonts.googleapis.com/css?family=Reem+Kufi';
+@import 'https://fonts.googleapis.com/css?family=Reem+Kufi';
 
 body {
   background: #fff;
 }
+
+
 @keyframes wave {
   0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 .music-card {
   margin: 10px auto;
   background: #fff;
@@ -63,6 +66,7 @@ body {
   border-radius: 40%;
   animation: wave 3000ms infinite linear;
 }
+/* when stop */
 .wave {
   border-radius: 40%;
   animation: wave 55s infinite linear;
@@ -71,6 +75,7 @@ body {
 .playing .wave:nth-child(2) {
   animation-duration: 4000ms;
 }
+/* when stop */
 .wave:nth-child(2) {
   animation-duration: 50s;
 }
@@ -78,6 +83,7 @@ body {
 .playing .wave:nth-child(3) {
   animation-duration: 5000ms;
 }
+/* when stop */
 .wave:nth-child(3) {
   animation-duration: 45s;
 }
@@ -119,6 +125,8 @@ body {
 .fa-play {
   display: none;
 }	
+
+
 				</style>
 				</head>
 <div class='music-card playing'>
@@ -138,9 +146,11 @@ body {
   <i class="fa fa-play trigger" aria-hidden="true"></i>
 </div>
 
-<div><h1> loading</h1>		
+<div>
+		<h1> loading</h1>		
 </div>
-<script>
+
+				<script>
 								var audio = new Audio('https://www.mboxdrive.com/y2mate.com%20-%20%E6%9B%B4%E6%B4%97%E8%85%A6%E7%9A%84%E7%86%B1%E6%84%9B105%E5%BA%A6%E7%9A%84%E4%BD%A0%20Super%20Idol%E5%9C%A880%E5%B9%B4%E4%BB%A3%E5%B0%B1%E6%98%AF%E9%86%AC%E7%9A%84feel%E4%BD%8E%E6%B8%85Dissy%E7%BF%BB%E5%94%B1MV%20Cover.mp3');
 audio.volume = 0.1;
 audio.autoplay = true;
